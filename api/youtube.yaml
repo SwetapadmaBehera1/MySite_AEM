@@ -1,0 +1,133 @@
+swagger: "2.0"
+info:
+  description: This is a youtube API.
+  version: 1.0.0
+  title: Movie Search
+  contact:
+    email: apiteam@swagger.io
+tags:
+- name: admin
+  description: Everything about your Movies
+- name: apis
+  description: Operations about user
+schemes:
+- https
+- http
+
+
+
+paths:
+  /api/mysite.youtube.json:
+    get:
+      tags:
+      - apis
+      summary: Finds youtubeMovies
+      description: Secured
+      operationId: getYoutubeResults
+      responses:
+        '200':
+          description: successful operation
+          schema:
+            $ref: '#/definitions/youtubeResponse'
+        '400':
+          description: "Invalid request"
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+
+
+
+
+definitions:
+  items:
+    type: array
+    items: 
+      $ref: '#/definitions/details'
+  details:
+    type: object
+    properties:
+      kind:
+        type: string
+      etag:
+        type: string
+      id:
+        type: object
+        properties:
+          kind:
+            type: string
+          videoId:
+            type: string
+      snippet:
+        type: object
+        properties:
+          publishedAt: 
+            type: string
+          channelId:
+            type: string
+          title: 
+            type: string
+          description:
+            type: string
+          thumbnails:
+            type: object
+            properties:
+              default: 
+                type: object
+                properties:
+                  url:
+                    type: string
+                  width:
+                    type: integer
+                  height:
+                    type: integer
+              medium: 
+                type: object
+                properties:
+                  url:
+                    type: string
+                  width:
+                    type: integer
+                  height:
+                    type: integer
+              high: 
+                type: object
+                properties:
+                  url:
+                    type: string
+                  width:
+                    type: integer
+                  height:
+                    type: integer
+          channelTitle: 
+            type: string
+          liveBroadcastContent:
+            type: string
+          publishTime: 
+            type: string
+                    
+
+
+  youtubeResponse:
+    type: object
+    properties:
+      kind:
+        type: string
+      etag:
+        type: string
+      nextPageToken:
+        type: string
+      regionCode:
+        type: string
+      pageInfo:
+        type: object
+        properties:
+          totalResults:
+            type: string
+          resultsPerPage:
+            type: string
+      items:
+        $ref: '#/definitions/items'
+
+     

@@ -1,0 +1,12 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+
+<section class="cmp-search"
+         role="search"
+         data-cmp-is="search">
+
+       <input type="text" id="search_param" placeholder="${properties.placeholder}"/>
+         <button type="submit" id="submit_search" class="submit_btn" >Search</button>
+<div class="cmp-search__results" aria-label="${'Search results' @ i18n}" data-cmp-hook-search="results" role="listbox" aria-multiselectable="false"></div>
+
+</section>
+<sly data-sly-call="${clientlib.js @ categories='mysite.wcm.components.search.v1'}"/>

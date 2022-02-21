@@ -1,0 +1,6 @@
+{
+  "apiKey": "$[secret:IMDB_API_KEY]",
+  "imdbApiUrl": "https://imdb-api.com/en/API/SearchMovie",
+  "key": "$[secret:YOUTUBE_API_KEY]",
+  "youtubeApiUrl": "https://content-youtube.googleapis.com/youtube/v3/search"
+}
