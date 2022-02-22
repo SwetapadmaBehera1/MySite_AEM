@@ -56,7 +56,7 @@ Junit Tests with coverage of more than 90%.
 
 ## Improvements
 
-* Oath authentication usage for youtube api.
+* OAuth authentication usage for api.
 * We can use in memory cache to cache the token generated in the above case.
 * The component needs to render the results data in presentable format.
 
