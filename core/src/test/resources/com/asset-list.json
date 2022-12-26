@@ -1,0 +1,78 @@
+{
+	"resource": {
+		"jcr:primaryType": "nt:unstructured",
+		"jcr:createdBy": "admin",
+		"jcr:lastModifiedBy": "admin",
+		"headline": "PDF List",
+		"filterTag": [
+			"properties:orientation"
+		],
+		"jcr:created": "Mon Sep 19 2022 21:40:37 GMT+0530",
+		"jcr:lastModified": "Tue Sep 20 2022 20:14:54 GMT+0530",
+		"sling:resourceType": "zeiss/components/pdflist",
+		"pdfPath": "/content/dam/zeiss"
+	},
+		
+	"resource_noAssetPath": {
+		"jcr:primaryType": "nt:unstructured",
+		"jcr:createdBy": "admin",
+		"jcr:lastModifiedBy": "admin",
+		"headline": "PDF List",
+		"filterTag": [
+			"properties:orientation"
+		],
+		"jcr:created": "Mon Sep 19 2022 21:40:37 GMT+0530",
+		"jcr:lastModified": "Tue Sep 20 2022 20:14:54 GMT+0530",
+		"sling:resourceType": "zeiss/components/pdflist",
+		"pdfPath": ""
+	},
+	
+	"resource_noFilterTag": {
+		"jcr:primaryType": "nt:unstructured",
+		"jcr:createdBy": "admin",
+		"jcr:lastModifiedBy": "admin",
+		"headline": "PDF List",
+		"filterTag": [],
+		"jcr:created": "Mon Sep 19 2022 21:40:37 GMT+0530",
+		"jcr:lastModified": "Tue Sep 20 2022 20:14:54 GMT+0530",
+		"sling:resourceType": "zeiss/components/pdflist",
+		"pdfPath": "/content/dam/zeiss"
+	},
+	
+	"asset1": {
+		"jcr:primaryType": "dam:AssetContent",
+		"metadata": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:title": "PDF Asset",
+			"dc:title": "",
+			"dam:size": 122325
+		}
+	},
+	
+	"asset2": {
+		"jcr:primaryType": "dam:AssetContent",
+		"metadata": {
+			"jcr:primaryType": "nt:unstructured",
+			"dc:title": "PDF Overview",
+			"dam:size": 1073741824
+		}
+	},
+	
+	"asset3": {
+		"jcr:primaryType": "dam:AssetContent",
+		"metadata": {
+			"jcr:primaryType": "nt:unstructured",
+			"dc:title": "Asset Overview",
+			"dam:size": 3860843
+		}
+	},
+	
+	"asset4": {
+		"jcr:primaryType": "dam:AssetContent",
+		"metadata": {
+			"jcr:primaryType": "nt:unstructured",
+			"dc:title": "PDF Asset Overview",
+			"dam:size": 1073741824
+		}
+	}
+}

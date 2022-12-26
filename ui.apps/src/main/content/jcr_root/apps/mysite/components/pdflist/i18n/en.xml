@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:language="en"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="nt:folder">
+    <pdf-list.title
+    	jcr:primaryType="sling:MessageEntry"
+    	sling:message="PDF List"/>
+    <pdf-list.desc
+    	jcr:primaryType="sling:MessageEntry"
+    	sling:message="List the Pdfs"/>
+    <pdf-list.pdfPath.label
+    	jcr:primaryType="sling:MessageEntry"
+    	sling:message="Pdf Path"/>
+    <pdf-list.pdfPath.desc
+    	jcr:primaryType="sling:MessageEntry"
+    	sling:message="Select the pdf path"/>
+   	<pdf-list.filterTag.label
+    	jcr:primaryType="sling:MessageEntry"
+    	sling:message="Filter Tag"/>
+    <pdf-list.filterTag.desc
+    	jcr:primaryType="sling:MessageEntry"
+    	sling:message="Select tags to filter pdf"/>
+    <pdf-list.id.label
+    	jcr:primaryType="sling:MessageEntry"
+    	sling:message="ID"/>
+    <pdf-list.id.desc
+    	jcr:primaryType="sling:MessageEntry"
+    	sling:message="HTML ID attribute"/>
+    <pdf-list.headline.label
+    	jcr:primaryType="sling:MessageEntry"
+    	sling:message="Headline"/>
+    <pdf-list.headline.desc
+    	jcr:primaryType="sling:MessageEntry"
+    	sling:message="Add a Heading"/>
+</jcr:root>
